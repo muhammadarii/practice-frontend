@@ -41,7 +41,7 @@ const TableCountries: React.FC<TableCountriesProps> = ({ Countries }) => {
               {country.name.common}
             </td>
             <td style={{ border: "1px solid #ddd", padding: "8px" }}>
-              {country.capital}
+              {country.capital ? country.capital.join(", ") : "N/A"}
             </td>
             <td style={{ border: "1px solid #ddd", padding: "8px" }}>
               {country.currencies
